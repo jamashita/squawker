@@ -17,12 +17,12 @@ export class User implements Entity {
     this._status = status;
   }
 
-  public ban(): void {
-    this._status = UserStatus.BANNED;
-  }
-
   public isPrivate(): boolean {
     return this._private.isPrivate();
+  }
+
+  public makeBanned(): void {
+    this._status = UserStatus.BANNED;
   }
 
   public makePrivate(): void {
@@ -33,7 +33,7 @@ export class User implements Entity {
     this._private = PrivateUser.NO;
   }
 
-  public suspend(): void {
+  public makeSuspended(): void {
     this._status = UserStatus.SUSPENDED;
   }
 

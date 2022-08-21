@@ -26,7 +26,7 @@ export class SuspendUser {
 
     const user: User = res.value;
 
-    user.suspend();
+    user.makeSuspended();
 
     return this._userRepository.update(user);
   }

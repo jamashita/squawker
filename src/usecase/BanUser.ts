@@ -26,7 +26,7 @@ export class BanUser {
 
     const user: User = res.value;
 
-    user.ban();
+    user.makeBanned();
 
     return this._userRepository.update(user);
   }
