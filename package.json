@@ -1,9 +1,13 @@
 {
   "name": "squawker",
   "version": "0.1.0",
-  "main": "index.js",
-  "license": "UNLICENSED",
   "private": true,
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "dependencies": {
+    "inversify": "6.0.1",
+    "reflect-metadata": "0.1.13"
+  },
   "devDependencies": {
     "typescript": "4.7.4"
   }
